@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FaRegBookmark } from "react-icons/fa6";
 
-const Blog = ({ blog }) => {
+const Blog = ({ blog, handleBookmark }) => {
   const {
     blog_img,
     blog_title,
@@ -27,15 +27,17 @@ const Blog = ({ blog }) => {
         </div>
         <div className="flex items-center gap-2">
           <p className="text-sm text-slate-500">{reading_time} minutes</p>
-          <button>
+          <button onClick={() => handleBookmark(blog_title)}>
             <FaRegBookmark></FaRegBookmark>
           </button>
         </div>
       </div>
       <h1 className="text-4xl font-bold">{blog_title}</h1>
       <div className="flex items-center gap-2">
-        {hashtags.map((hashtag) => (
-          <p className="text-sm text-slate-500">{hashtag}</p>
+        {hashtags.map((hashtag, index) => (
+          <p className="text-sm text-slate-500" key={index}>
+            {hashtag}
+          </p>
         ))}
       </div>
       <button>
@@ -47,6 +49,7 @@ const Blog = ({ blog }) => {
 
 Blog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleBookmark: PropTypes.func.isRequired,
 };
 
 export default Blog;

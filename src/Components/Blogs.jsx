@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import Blog from "./Blog";
 
-const Blogs = () => {
+const Blogs = ({ handleBookmark }) => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     fetch("blogs.json")
@@ -12,12 +12,14 @@ const Blogs = () => {
   return (
     <div className="w-2/3">
       {blogs.map((blog) => (
-        <Blog key={blog.id} blog={blog}></Blog>
+        <Blog key={blog.id} blog={blog} handleBookmark={handleBookmark}></Blog>
       ))}
     </div>
   );
 };
 
-Blogs.propTypes = {};
+Blogs.propTypes = {
+  handleBookmark: PropTypes.func.isRequired,
+};
 
 export default Blogs;
