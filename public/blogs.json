@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "blog_img": "https://i.ibb.co.com/gLf0Z1L2/1.jpg",
+    "blog_title": "ES6 Features You Should Know",
+    "author_img": "https://i.ibb.co.com/YFxcpXNP/boy1.png",
+    "author_name": "John Doe",
+    "publish_date": "2025-03-20",
+    "reading_time": 5,
+    "hashtags": ["#JavaScript", "#ES6", "#Coding"]
+  },
+  {
+    "id": 2,
+    "blog_img": "https://i.ibb.co.com/k2cQBGX6/2.png",
+    "blog_title": "The Evolution of Computers",
+    "author_img": "https://i.ibb.co.com/pvbpH21X/boy2.jpg",
+    "author_name": "Jane Smith",
+    "publish_date": "2025-03-18",
+    "reading_time": 7,
+    "hashtags": ["#Computers", "#Technology", "#History"]
+  },
+  {
+    "id": 3,
+    "blog_img": "https://i.ibb.co.com/B5nRQgwr/3.png",
+    "blog_title": "Getting Started with React",
+    "author_img": "https://i.ibb.co.com/qY9j7jcM/girl1.jpg",
+    "author_name": "Alice Johnson",
+    "publish_date": "2025-03-15",
+    "reading_time": 6,
+    "hashtags": ["#React", "#Frontend", "#WebDevelopment"]
+  },
+  {
+    "id": 4,
+    "blog_img": "https://i.ibb.co.com/0yRGkzgt/4.jpg",
+    "blog_title": "Top Free Resources for Learning Code",
+    "author_img": "https://i.ibb.co.com/rK7GGVgK/girl2.jpg",
+    "author_name": "Michael Brown",
+    "publish_date": "2025-03-10",
+    "reading_time": 8,
+    "hashtags": ["#FreeResources", "#Coding", "#LearnToCode"]
+  }
+]
