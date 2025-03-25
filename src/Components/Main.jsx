@@ -7,7 +7,12 @@ const Main = () => {
   const [bookmarks, setBookmarks] = useState([]);
   const [readingTime, setReadingTime] = useState(0);
   const handleBookmark = (blog) => {
-    setBookmarks([...bookmarks, blog]);
+    const duplicate = bookmarks.find((bookmark) => bookmark.id === blog.id);
+    if (!duplicate) {
+      setBookmarks([...bookmarks, blog]);
+    } else {
+      alert("Bookmark already added");
+    }
   };
   const handleMarkAsRead = (reading_time, id) => {
     setReadingTime(utility(reading_time));
