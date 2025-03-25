@@ -41,7 +41,7 @@ const Blog = ({ blog, handleBookmark, handleMarkAsRead }) => {
           </p>
         ))}
       </div>
-      <button onClick={() => handleMarkAsRead(reading_time)}>
+      <button onClick={() => handleMarkAsRead(reading_time, id)}>
         <a className="underline">Mark as read</a>
       </button>
     </div>

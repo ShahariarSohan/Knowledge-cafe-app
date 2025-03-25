@@ -9,8 +9,10 @@ const Main = () => {
   const handleBookmark = (blog) => {
     setBookmarks([...bookmarks, blog]);
   };
-  const handleMarkAsRead = (reading_time) => {
+  const handleMarkAsRead = (reading_time, id) => {
     setReadingTime(utility(reading_time));
+    const sortedBookmark = bookmarks.filter((bookmark) => bookmark.id !== id);
+    return setBookmarks(sortedBookmark);
   };
   return (
     <div className="flex justify-between gap-5 container mx-auto">
