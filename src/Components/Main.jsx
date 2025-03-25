@@ -11,7 +11,7 @@ const Main = () => {
   };
   const handleMarkAsRead = (reading_time, id) => {
     setReadingTime(utility(reading_time));
-    const sortedBookmark = bookmarks.filter((bookmark) => bookmark.id !== id);
+    const sortedBookmark = bookmarks?.filter((bookmark) => bookmark.id !== id);
     return setBookmarks(sortedBookmark);
   };
   return (
